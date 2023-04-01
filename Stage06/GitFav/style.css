@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-primary: 'Roboto', sans-serif;
+
+  --bg-body-color: #2F2F33;
+  --bg-btn-color: #065E7C;
+  --remove-btn-color: #F75A68;
+  --tt-color: #E1E1E6;
+  --table-column-color: #092D38;
+  --primary-color: #06181C;
+  --second-color: rgba(6, 22, 27, 0.5);;
+  --bd-table-color: #4A808C;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--bg-body-color);
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+#app {
+  padding: 2rem;
+  margin: 0 auto;
+  width: 1120px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 2.5rem 0;
+}
+
+.noFav {
+  display: block;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.search input {
+  height: 4.5rem;
+  width: 46.2rem;
+  padding: 1.6rem;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--tt-color);
+  border: none;
+}
+
+.search input:focus {
+  outline-color: var(--bd-table-color);
+}
+
+.search button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 3.2rem;
+  gap: .8rem;
+  text-transform: uppercase;
+  color: var(--tt-color);
+  background: var(--bg-btn-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.search button:hover {
+  background-color: var(--tt-color);
+  color: var(--bg-btn-color);
+}
+
+svg:hover {
+  fill: var(--bg-btn-color);
+}
+
+table {
+  width: 100%;
+  margin-top: 8.7rem;
+
+  border-collapse: collapse;
+  border: 1px solid #4A808C;
+  border-radius: 1.2rem;
+}
+
+table * {
+  font-size: 2rem;
+  color: var(--tt-color);
+  font-family: var(--ff-primary);
+}
+
+table th {
+  background-color: var(--table-column-color);
+  text-align: left;
+  font-weight: normal;
+  padding: 1.6rem 2.4rem 1.6rem 2.4rem;
+  border-bottom: 1px solid #4A808C;
+}
+
+table tr:nth-child(even) {
+  background: var(--primary-color);
+}
+
+table tr:nth-child(odd) {
+  background: var(--second-color);
+}
+
+table td {
+  padding: 2.8rem;
+  border-bottom: 1px solid #4A808C;
+  text-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  width: 50.4rem;
+}
+
+td.user img {
+  height: 5.6rem;
+  width: 5.6rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user a p{
+  font-weight: bold;
+}
+
+.remove {
+  border: none;
+  color: var(--remove-btn-color);
+  background: none;
+  cursor: pointer;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+}

@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+main {
+  max-width: 1280px;
+  margin: 20rem auto 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer span{
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #323238;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.controls {
+  margin-top: 4rem;
+  display: flex;
+  gap: 3rem;  
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.cards button {
+  width: 14rem;
+  height: 15rem;
+  
+  border-radius: 2.4rem;
+  
+  color: #323238;
+  background: #E1E1E6;
+}
+
+
+button.selected {
+  background: #02799D;
+}
+
+.selected path {
+  fill: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+@media(max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+}
